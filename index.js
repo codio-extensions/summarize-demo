@@ -12,11 +12,11 @@ window.codioIDE.coachBot.register({
         // do something smart!
         const context = await window.codioIDE.coachBot.getContext()
         console.log('bot context', context)
+        console.log('userPrompt', data.userPrompt)
 
         window.codioIDE.coachBot.write('Please wait. I will provide info shortly...')
 
         const onDone = () => {
-          console.log('userPrompt', data.userPrompt)
           console.log('bot on done callback')
         }
 
