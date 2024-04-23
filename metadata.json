@@ -1,5 +1,5 @@
 {
-  "name": "Coach callback demo plugin",
+  "name": "Summarize plugin example",
   "type": "helper",
   "properties": {
     "user_type": "all",
