@@ -1,10 +1,10 @@
 window.codioIDE.coachBot.register({
   id: 'customButton',
-  text: 'Get react hook hint?',
+  text: 'Can you help me summarize?',
   steps: [{
     type: window.codioIDE.coachBot.ACTIONS_TYPES.INPUT,
     key: 'userPrompt',
-    text: 'Please type hook name below'
+    text: 'Please type below'
   },
     {
       type: window.codioIDE.coachBot.ACTIONS_TYPES.CALLBACK,
@@ -16,6 +16,7 @@ window.codioIDE.coachBot.register({
         window.codioIDE.coachBot.write('Please wait. I will provide info shortly...')
 
         const onDone = () => {
+          console.log('userPrompt', data.userPrompt)
           console.log('bot on done callback')
         }
 
